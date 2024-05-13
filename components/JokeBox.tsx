@@ -48,8 +48,8 @@ const JokeBox = () => {
                 <p className='w-[100%] mb-3'>
                     {joke!="Your joke appears here" && joke.split(":")[0]}
                 </p>
-                <p className='w-[100%] font-semibold text-xl'>
-                    {joke!="Your joke appears here" && joke.split(":")[1].split("?")[0]}?
+                <p className='w-[100%] font-semibold text-xl mb-1'>
+                    {joke!="Your joke appears here" && joke.split(":")[1].split("?")[0]+"?"}
                 </p>
                 <p className='w-[100%] font-bold text-lg'>
                     {joke!="Your joke appears here" && joke.split("?")[1]}
