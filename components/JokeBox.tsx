@@ -46,13 +46,13 @@ const JokeBox = () => {
             </div>
             <div className='border-gray-150 border-[1px] shadow-md border-solid rounded-md px-3 py-2 mt-3 h-52'>
                 <p className='w-[100%] mb-3'>
-                    {joke!="" && joke.split(":")[0]}
+                    {joke!="Your joke appears here" && joke.split(":")[0]}
                 </p>
                 <p className='w-[100%] font-semibold text-xl'>
-                    {joke!="" && joke.split(":")[1].split("?")[0]}?
+                    {joke!="Your joke appears here" && joke.split(":")[1].split("?")[0]}?
                 </p>
                 <p className='w-[100%] font-bold text-lg'>
-                    {joke!="" && joke.split("?")[1]}
+                    {joke!="Your joke appears here" && joke.split("?")[1]}
                 </p>
             </div>
         </div>
