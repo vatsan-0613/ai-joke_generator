@@ -1,14 +1,14 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { NextApiRequest, NextApiResponse } from 'next';
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_KEY,
 });
 
 
-export const GET = async (req: NextApiRequest,
-  res: NextApiResponse) => {
+export const GET = async (req: NextRequest,
+  res: NextResponse) => {
 
     const { searchParams } = new URL(req.url as string)
     const topic = searchParams.get('topic')
